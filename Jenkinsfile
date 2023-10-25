@@ -1,4 +1,5 @@
 node {
+    print "${env.BRANCH_NAME}"
     stage('Clone') {
         git 'https://github.com/timtest1562/jenkins-helloworld.git'
     }
